@@ -1,4 +1,4 @@
-package de.thunderfrog;
+package de.bfz;
 
 public class Main {
 
