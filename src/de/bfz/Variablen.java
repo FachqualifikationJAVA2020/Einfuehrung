@@ -1,12 +1,12 @@
 package de.bfz;
 
-public class Variablen {
-    /*
-     *  Variablen sind Platzhalter für Werte
-     *  JEDE Variable hat einen Datentypen (streng typisierte Sprache)
-     *  einen Variablennamen und einen Wert
-     */
+/*
+ *  Variablen sind Platzhalter für Werte
+ *  JEDE Variable hat einen Datentypen (streng typisierte Sprache)
+ *  einen Variablennamen und einen Wert
+ */
 
+public class Variablen {
     // ZAHLEN
 
     int zahl = 1;
