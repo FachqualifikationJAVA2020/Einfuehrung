@@ -1,6 +1,7 @@
 package de.bfz;
 
 public class Operatoren {
+
     public static void main(String[] args) {
         /*
          *  Es gibt die Rechenoperatoren
@@ -71,6 +72,62 @@ public class Operatoren {
         // Ausgabe true
         System.out.println(5 > 3);
 
+
+        /*
+         *  Zuletzt gibt es noch logische Operatoren
+         *
+         *  Der UND-Operator verknüpft zweu Wahrheitswerte
+         *  nur wenn beide true sind, ist das Ergebnis true
+         *  & ist der UND-Operator
+         *  && ist der Quick Resolve Operator für &
+         *  wenn schon die erste Bedingung false ist, wird die zweite nicht
+         *  mehr ausgewertet
+         */
+        char ch = 't';
+        double dou = 1.5;
+
+        if(ch == 't' & dou < 2){
+            System.out.println("Beides Wahr");
+        } else {
+            System.out.println("Beides nicht wahr");
+        }
+
+        /*
+         *  Als nächstes gibt es das logische ODER
+         *  wenn einer der beiden Wahrheitswerte true ist
+         *  ist das Ergebnis auch true.
+         *  Nur wenn beide false sind, ist das Ergebnis false
+         *   | wertet auf jeden Fall beide Bedingungen aus
+         *   || hören nach der ersten Bedingung auf, wenn diese schon wahr ist
+         */
+        if(ch == 't' | dou < 2){
+            System.out.println("Mindestens eins Wahr");
+        } else {
+            System.out.println("Beides unwahr");
+        }
+
+        /*
+         *  Zuletzt gibt es noch die Verneinung NICHT
+         *  sie kehr den Warheitswert um
+         *
+         */
+        boolean gleich = ch == 't';
+        // Hier wird zuerst der Warheitswert ermittelt, also ch == 't' geprüft
+        // und dann das Ergebnis der Variable gleich zugewiesen
+        if(!gleich){
+            System.out.println("Ungleich");
+        } else {
+            System.out.println("Gleich");
+        }
+
+
+        /*
+         *  Natürlich kann ich diese Operatoren zu komplizierten logischen
+         *  Konstrukte verknüpfen
+         */
+        if(ch == 't' && !(dou >2) || ch == 'c' && dou < 3){
+            System.out.println("Alles wahr");
+        }
 
     }
 }
