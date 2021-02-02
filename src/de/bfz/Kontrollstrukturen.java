@@ -28,7 +28,7 @@ public class Kontrollstrukturen {
 
         /*
          *  Die Zählervariable j ist auch außerhalb der Schleife aufrufbar,
-         *  da diese VOR der Schleife deklariert wird         *
+         *  da diese VOR der Schleife deklariert wird
          */
         int j;
         for (j = 0; j < 3; j = j + 1) {
@@ -42,7 +42,37 @@ public class Kontrollstrukturen {
         System.out.println(j);
 
         /*
-         *  Die einfachste Art der Verzweigung ist eine Wenn-Dann Verzweigung         *
+         *  Für mehrere Zweige (also mehr als Zwei) gibt es switch - case
+         */
+        switch (j){
+            case 1:
+                System.out.println("Eins");
+                break;
+            case 2:
+                System.out.println("Zwei");
+                break;
+            case 3:
+                System.out.println("Drei");
+                break;
+            default:
+                System.out.println("Eine andere Zahl");
+        }
+        /*
+         *  break hinter jedem case sorgt dafür, dass nicht die nachfolgenden cases
+         *  auch ausgeführt werden
+         *  Die cases müssen nicht in einer bestimmten Reihenfolge stehen
+         *
+         *  Als mögliche Datentypen für switch stehen zur Verfügung:
+         *  int, short, byte, long
+         *  char
+         *  string
+         *
+         *  Nicht zulässing sind float, double, boolean (dafür gibt es if)
+         */
+
+
+        /*
+         *  Die einfachste Art der Verzweigung ist eine Wenn-Dann Verzweigung
          */
         if(j == 2) {
             // Wird ausgeführt wenn die Bedingung wahr ist
