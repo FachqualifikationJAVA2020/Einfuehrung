@@ -18,6 +18,7 @@ public class Kontrollstrukturen {
          *  Die Zählervariable existiert nur innerhalb der Schleife,
          *  da sie in der runden Klammer erst deklariert wird
          */
+        System.out.println("for-Schleife");
         for (int i = 0; i < 20; i = i + 1) {
             /*
              * Ausgabe: 0 - 19 Zeilenweise
@@ -41,9 +42,35 @@ public class Kontrollstrukturen {
         // Ausgabe: 3
         System.out.println(j);
 
+
+        /*
+         *  Eine andere Art von Schleifen ist die while-Schleife
+         *  So wie die for-Schleife ist die while-schleife kopfgesteuert
+         *  d.h. oben vor dem Schleifenkörper wird die Bedingung geprüft
+         */
+        System.out.println("while-Schleife");
+        int a = 0;
+        while(a < 10){
+            a = a * 2;
+            System.out.println(a);
+            a = a + 1;
+        }
+
+        /*
+         *  do-Schleife ist Fußgesteuert d.h. die Bedingung wird unten hinter
+         *  dem Schleifenkörper geprüft - eine do-Schleife wird auf jeden Fall
+         *  einmal durchlaufen
+         */
+        System.out.println("do-Schleife");
+        do {
+            System.out.println(a);
+        }while (a < 10);
+
+
         /*
          *  Für mehrere Zweige (also mehr als Zwei) gibt es switch - case
          */
+        System.out.println("switch case");
         switch (j){
             case 1:
                 System.out.println("Eins");
@@ -74,6 +101,7 @@ public class Kontrollstrukturen {
         /*
          *  Die einfachste Art der Verzweigung ist eine Wenn-Dann Verzweigung
          */
+        System.out.println("if else");
         if(j == 2) {
             // Wird ausgeführt wenn die Bedingung wahr ist
             System.out.println("j ist zwei");
