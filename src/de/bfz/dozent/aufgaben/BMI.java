@@ -37,5 +37,6 @@ public class BMI {
 		} else {
 			System.out.println("Sie haben Normalgewicht");
 		}
+		//
 	}
 }
