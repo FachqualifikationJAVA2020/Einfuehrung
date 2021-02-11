@@ -78,7 +78,7 @@ public class Arrays {
          * und dann den Index des Mitarbeiters
          */
 
-        System.out.println(firma[0][1]);
+        System.out.println(firma[1][0]);
 
         /*
          * Natürlich kann ich auch mehrdimensionale Arrays ohne Angabe von Werten deklarieren
@@ -102,5 +102,31 @@ public class Arrays {
             }
             System.out.println();
         }
+
+        int [][] einkommen_miete = {
+                                    // Zeile 0
+                                    {4200,1200},
+
+                                    // Zeile 1
+                                    {900,340},
+
+                                    // Zeile 2
+                                    {1800,600},
+
+                                    // Zeile 3
+                                    {3600,1100}
+
+                                    };
+        /*
+         * System.out.println(einkommen_miete[ZEILE][SPALTE]);
+         */
+
+        // Ausgabe: 900
+        System.out.println(einkommen_miete[1][0]);
+        // Ausgabe 340
+        System.out.println(einkommen_miete[1][1]);
+        // Ausgabe 1100
+        System.out.println(einkommen_miete[3][1]);
+
     }
 }

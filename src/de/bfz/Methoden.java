@@ -82,7 +82,8 @@ public class Methoden {
 			}
 		}
 	}
-	
+
+
 	static void ausgabe(int[] ints) {
 		for(int i=0; i < ints.length; i++) {
 			System.out.println(ints[i]);
